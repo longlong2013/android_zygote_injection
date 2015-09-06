@@ -1,0 +1,20 @@
+Notice£º
+	This project is only for the one who is interested in android injection, I remember that when I want to inject a dex file to a common program,like the App that u write by yourself,it¡¯s  easy to solve this ,but when I want to inject a dex file to zygote program,it will be blocked.This project is modified from a project which is created from the author boyliang.
+
+Poison
+======
+
+This is a program that can inject a shared library or dex file to zygote process,and can guarantee that a process could start up successfully. 
+Another of the Android platform injection tools,made a special handling the Zyote process, solves the problems of injection Zyote process will be blocked
+
+##Install
+the source can build easy by NDK, without any special dependence.
+
+##Usage
+
+Before running this program,you should edit poison.c.(replace process_hook.dso and process_hook.pid)
+ 
+when you want to run it , just input "./zygote" ,this program can find pid of zygote automatically and execute completely.
+
+
+
